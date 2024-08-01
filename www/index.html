@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Título do App -->
+    <title>Intuitive</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="mdi mdi-heart"></i>
+                        <span>Meu Bem-Estar</span>
+                    </a>
+                    <a href="/entreterimento/" class="tab-link link">
+                        <i class="mdi mdi-gamepad-variant"></i>
+                        <span>Entreterimento</span>
+                    </a>
+                    <a href="/tutoriais/" class="tab-link link">
+                        <i class="mdi mdi-help"></i>
+                        <span>Tutoriais</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Saúde & Bem-Estar</div>
+                    </div>
+                </div>
+
+
+                <!-- Search Engine -->
+                <form>
+                    <input class="search-input" placeholder="Digite aqui o que deseja encontrar!" type="text">
+                    <i class="mdi mdi-magnify"></i>
+                </form>
+
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+
+                        <!--Botões/Buttons-->
+                        <button type="button" id="exercise" class="buttons"
+                            onclick="window.location.href='https://www.holmesplace.com/pt/pt/blog/fitness/5-exercicios-para-aumentar-a-energia-matinal';">Exercícios
+                            Matinais</button>
+
+                        <button type="button" id="mental" class="buttons"
+                            onclick="window.location.href='https://fia.com.br/blog/saude-mental-o-que-e-importancia-problemas-e-como-cuidar/';">Saúde
+                            Mental</button>
+
+                        <button type="button" id="travel" class="buttons"
+                            onclick="window.location.href='https://www.carpemundi.com.br/viajar-sem-sair-casa/';">Viajar
+                            Sem
+                            Sair de Casa</button>
+
+                        <button type="button" id="no" class="buttons"
+                            onclick="window.location.href='https://www.unimedcampinas.com.br/blog/saude-emocional/como-dizer-nao-a-importancia-de-se-priorizar-para-sua-#:~:text=Dizer%20n%C3%A3o%20%C3%A9%20parte%20do,nada%20para%20realizar%20as%20suas.';">Saiba
+                            Dizer Não</button>
+
+                        <button type="button" id="hobbies" class="buttons"
+                            onclick="window.location.href='https://segredosdomundo.r7.com/melhores-hobbies-curtir-tempo-livre/';">Hobbies</button>
+
+                        <button type="button" id="emergency" class="buttons"
+                            onclick="window.location.href='https://www.jusbrasil.com.br/artigos/vixe-e-agora-telefones-de-emergencia/562210672';">Emergências</button>
+
+                        <button type="button" id="pele" class="buttons"
+                            onclick="window.location.href='https://www.unimedcampinas.com.br/blog/viver-com-saude/5-dicas-que-vao-te-ajudar-nos-cuidados-com-a-pele';">Cuidados
+                            com a pele</button>
+
+                        <button type="button" id="ocular" class="buttons"
+                            onclick="window.location.href='https://viverbem.unimedbh.com.br/prevencao-e-controle/dia-da-saude-ocular/';">Cuidados
+                            com a visão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

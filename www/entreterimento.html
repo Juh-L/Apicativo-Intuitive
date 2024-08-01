@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="agenda" class="page">
+
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Jogos & Entreterimento</div>
+                    </div>
+                </div>
+
+                <!-- Search Engine -->
+                <form>
+                    <input class="search-input" placeholder="Digite aqui o que deseja encontrar!" type="text">
+                    <i class="mdi mdi-magnify"></i>
+                </form>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+
+                        <!--Botões/Buttons-->
+                        <button type="button" id="sudoku" class="buttons"
+                            onclick="window.location.href='https://sudoku.com/pt';">Sudoku</button>
+
+                        <button type="button" id="palavra" class="buttons"
+                            onclick="window.location.href='https://g1.globo.com/jogos/palavras-cruzadas/';">Palavras-Cruzadas</button>
+
+                        <button type="button" id="youtube" class="buttons"
+                            onclick="window.location.href='https://www.youtube.com/';">Youtube</button>
+
+                        <button type="button" id="puzzle" class="buttons"
+                            onclick="window.location.href='https://www.geniol.com.br/raciocinio/quebra-cabeca/';">Quebra-Cabeça</button>
+
+                        <button type="button" id="solitaire" class="buttons"
+                            onclick="window.location.href='https://xn--pacincia-n1a.eu/spider/';">Paciência</button>
+
+                        <button type="button" id="pacman" class="buttons"
+                            onclick="window.location.href='https://www.google.com/logos/2010/pacman10-i.html';">Pac-Man</button>
+
+                        <button type="button" id="mahjong" class="buttons"
+                            onclick="window.location.href='https://mahjong-jogo.com/';">Mahjong</button>
+
+                        <button type="button" id="xadrez" class="buttons"
+                            onclick="window.location.href='https://www.chess.com/pt-BR/play/computer';">Xadrez</button>
+
+                        <button type="button" id="bubble" class="buttons"
+                            onclick="window.location.href='https://www.bubbleshooter.com/pt/';">Bubble Shooter</button>
+
+                        <button type="button" id="desenhos" class="buttons"
+                            onclick="window.location.href='https://www.hajapaciencia.com.br/passatempos/colorir/';">Colorir
+                            Desenhos</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

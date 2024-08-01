@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/personalizado.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="tutoriais" class="page">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Tutoriais</div>
+                    </div>
+                </div>
+
+                <!--Barra de pesquisa/Search Engine -->
+                <form>
+                    <input class="search-input" placeholder="Digite aqui o que deseja encontrar!" type="text">
+                    <i class="mdi mdi-magnify"></i>
+                </form>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+
+                        <!--Botões/Buttons-->
+                        <button type="button" id="howyoutube" class="buttons"
+                            onclick="window.location.href='https://www.techtudo.com.br/noticias/2015/11/como-usar-o-youtube-um-guia-pratico.ghtml';">Como
+                            usar o Youtube</button>
+
+                        <button type="button" id="okgoogle" class="buttons"
+                            onclick="window.location.href='https://olhardigital.com.br/2022/07/22/dicas-e-tutoriais/ok-google-o-que-e-como-ativar-e-como-usar-o-google-assistente/#:~:text=Para%20fazer%20uma%20pesquisa%20na,na%20tela%20do%20seu%20smartphone';">Ferramenta
+                            Ok Google</button>
+
+                        <button type="button" id="internet" class="buttons"
+                            onclick="window.location.href='https://www.youtube.com/watch?v=lKUJm0tktPE';">Navegar
+                            na Internet</button>
+
+                        <button type="button" id="aplicativos" class="buttons"
+                            onclick="window.location.href='https://www.youtube.com/watch?v=A1J9ayHasEw';">Como baixar
+                            aplicativos</button>
+
+                        <button type="button" id="seguranca" class="buttons"
+                            onclick="window.location.href='https://www.techtudo.com.br/noticias/2022/06/celular-como-se-proteger-de-golpes-e-aumentar-a-seguranca.ghtml';">Segurança
+                            do celular</button>
+
+                        <button type="button" id="gmail" class="buttons"
+                            onclick="window.location.href='https://canaltech.com.br/internet/como-usar-o-gmail/';">Como
+                            usar o gmail</button>
+
+                        <button type="button" id="gps" class="buttons"
+                            onclick="window.location.href='https://www.youtube.com/watch?v=d8rJq6WEIa4';">Como
+                            usar o GPS</button>
+
+                        <button type="button" id="facebook" class="buttons"
+                            onclick="window.location.href='https://dialogando.com.br/inovacao/descomplicando-a-tecnologia-como-usar-o-facebook/';">Como
+                            usar o Facebook</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

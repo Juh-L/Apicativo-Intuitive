@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Lora", serif;
+}
+
+.toolbar {
+    height: 80px;
+}
+
+.tab-link {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner .link {
+    flex: 1;
+    height: 80px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(27, 92, 188);
+}
+
+
+.toolbar-inner .link:not(.active) {
+    color: rgb(30, 28, 28);
+    font-weight: normal;
+}
+
+.toolbar-inner>.link i {
+    font-size: 28px;
+}
+
+form {
+    padding-top: 75px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+/*barra de pesquisa*/
+.search-input[type="text"] {
+    width: 95%;
+    height: 45px;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background: rgb(220, 221, 224);
+}
+
+::placeholder {
+    color: #232222;
+    font-size: 17px;
+}
+
+.mdi-magnify {
+    position: absolute;
+    top: 80px;
+    right: 24px;
+    font-size: 25px;
+}
+
+/*características gerais dos botões*/
+.buttons {
+    width: 180px;
+    padding: 45px;
+    border-radius: 15px;
+    border-color: rgb(181, 165, 144);
+    font-size: 19px;
+    font-family: "Lora", serif;
+    font-display: auto;
+}
+
+
+/*botão exercícios matinais*/
+#exercise {
+    color: rgb(0, 0, 0);
+    background-image: url("imagens/morning.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -80px;
+    left: -9px;
+}
+
+/*botão Saúde Mental*/
+#mental {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/pixel.jpg");
+    background-size: 220px;
+    position: relative;
+    top: -226px;
+    left: 178px;
+}
+
+/*botão Viajar sem Sair de Casa*/
+#travel {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/rain.jpg");
+    background-size: 400px;
+    position: relative;
+    top: -218px;
+    left: -9px;
+}
+
+/*botão Como dizer Não*/
+#no {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/purple.jpg");
+    background-size: 250px;
+    position: relative;
+    top: -391px;
+    left: 178px;
+}
+
+/*botão Hobbies*/
+#hobbies {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/fishing1.jpg");
+    background-size: 250px;
+    position: relative;
+    top: -385px;
+    left: -9px;
+}
+
+/*botão Emergência*/
+#emergency {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/health.jpg");
+    background-size: 350px;
+    background-position: 180px;
+    position: relative;
+    top: -503px;
+    left: 180px;
+}
+
+
+/*botão Cuidados com a pele*/
+#pele {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/pele.jpg");
+    background-size: 350px;
+    background-position: 180px;
+    position: relative;
+    top: -495px;
+    left: 180px;
+}
+
+
+/*botão Cuidados com a visão*/
+#ocular {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/eyes.jpg");
+    background-size: 350px;
+    background-position: 180px;
+    position: relative;
+    top: -673px;
+    left: -9px;
+}
+
+/*botão Sudoku*/
+#sudoku {
+    color: rgb(0, 0, 0);
+    background-image: url("imagens/sudoku.jpg");
+    background-size: 430px;
+    position: relative;
+    top: -80px;
+    left: -9px;
+}
+
+/*botão Palavras-Cruzadas*/
+#palavra {
+    color: rgb(0, 0, 0);
+    background-image: url("imagens/palavra.jpg");
+    background-size: 600px;
+    position: relative;
+    top: -72px;
+    left: -9px;
+}
+
+/*botão Youtube*/
+#youtube {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/red.jpg");
+    background-size: 800px;
+    position: relative;
+    top: -347px;
+    left: 178px;
+}
+
+/*botão Quebra-Cabeça*/
+#puzzle {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/puzzle1.jpg");
+    background-size: 1000px;
+    position: relative;
+    top: -339px;
+    left: 178px;
+}
+
+/*botão Paciência*/
+#solitaire {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/card.jpg");
+    background-size: 600px;
+    background-position: 300px;
+    position: relative;
+    top: -330px;
+    left: 178px;
+}
+
+/*botão Pac-Man*/
+#pacman {
+    color: rgb(7, 1, 1);
+    background-image: url("imagens/yellow.jpg");
+    background-size: 800px;
+    position: relative;
+    top: -452px;
+    left: -9px;
+}
+
+/*botão Mahjong*/
+#mahjong {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/marble.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -442px;
+    left: -9px;
+}
+
+/*botão Xadrez*/
+#xadrez {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/chess.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -590px;
+    left: 180px;
+}
+
+/*botão Bubble Shooter*/
+#bubble {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/bubble.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -554px;
+    left: -9px;
+}
+
+/*botão Colorir Desenhos*/
+#desenhos {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/ceu.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -728px;
+    left: 180px;
+}
+
+/*botão Como usar Youtube*/
+#howyoutube {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/orange.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -80px;
+    left: -9px;
+}
+
+/*botão Ok Google*/
+#okgoogle {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/green.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -254px;
+    left: 180px;
+}
+
+/*botão Como navegar na Internet*/
+#internet {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/keyboard.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -247px;
+    left: 180px;
+}
+
+/*botão Como baixar aplicativos*/
+#aplicativos {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/clear.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -421px;
+    left: -7px;
+}
+
+/*botão Segurança do celular*/
+#seguranca {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/tiles.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -415px;
+    left: -7px;
+}
+
+/*botão Gmail*/
+#gmail {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/sand.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -585px;
+    left: 180px;
+}
+
+/*botão GPS*/
+#gps {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/pink.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -580px;
+    left: -7px;
+}
+
+/*botão Como usar o Facebook*/
+#facebook {
+    color: rgb(14, 12, 12);
+    background-image: url("imagens/blue.jpg");
+    background-size: 300px;
+    position: relative;
+    top: -750px;
+    left: 180px;
+}
